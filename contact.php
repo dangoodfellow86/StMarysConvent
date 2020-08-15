@@ -48,7 +48,7 @@
     </nav>
     <div class="main">
         <div class="container">
-  <form action="contactform.php">
+  <form action="contactform.php" method="post">
 
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="fName" placeholder="Your name..">
