@@ -48,24 +48,24 @@
     </nav>
     <div class="main">
         <div class="container">
-  <form action="contactform.php" method="post">
+            <form action="contactform.php" method="post">
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="fName" placeholder="Your name..">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fName" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lName" placeholder="Your last name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lName" placeholder="Your last name..">
 
-    <label for="email">Email</label>
-    <input type="email" name="email" placeholder="Your Email">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Your Email">
 
-    <label for="message">Message</label>
-    <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                <label for="message">Message</label>
+                <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+                <input type="submit" name="submit" value="Submit">
 
-  </form>
-</div>
+            </form>
+        </div>
 
     </div>
     <footer>
