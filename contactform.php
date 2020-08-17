@@ -6,7 +6,7 @@
 
     $mail = new PHPMailer;
 
-                                          // Set mailer to use SMTP
+    $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.yahoo.com';
     $mail->Port = 465;                     // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
