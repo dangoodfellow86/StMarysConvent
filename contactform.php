@@ -8,7 +8,7 @@
 
                                           // Set mailer to use SMTP
     $mail->Host = 'smtp.yahoo.com';
-    $mail->Port = 587;                     // Specify main and backup SMTP servers
+    $mail->Port = 465;                     // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'daniel.goodfellow@yahoo.com';   // SMTP username
     $mail->Password = 'Rawg3ts3!';                           // SMTP password
