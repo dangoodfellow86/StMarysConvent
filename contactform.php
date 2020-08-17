@@ -1,34 +1,19 @@
 
 
 <?php
-    if(isset($_POST['submit'])){
-    require 'phpmailer/PHPMailerAutoload.php';
-
-    $mail = new PHPMailer;
-
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.yahoo.com';
-    $mail->Port = 465;                     // Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'daniel.goodfellow@yahoo.com';   // SMTP username
-    $mail->Password = 'rawgets3';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable encryption, only 'tls' is accepted
-
-    $mail->setFrom = 'daniel.goodfellow';
-    $mail->addAddress('Daniel.goodfellow@sky.com');
-                    // Add a recipient
     
+    require 'vendor/autoload.php';
+    use Mailgun\Mailgun;
     
-      
+    # Instantiate the client.
+    $mgClient = Mailgun::create('a232d415d2cdddf19942fcd42d11005b-203ef6d0-1e70ea81', 'https://api.mailgun.net/v3/sandbox9da3b219d1ef41258a670b124f821fc4.mailgun.org');
+    $domain = "sandbox9da3b219d1ef41258a670b124f821fc4.mailgun.org";
+    $params = array(
+    'from'    => 'Excited User <YOU@sandbox9da3b219d1ef41258a670b124f821fc4.mailgun.org	>',
+    'to'      => 'daniel.goodfellow@sky.com',
+    'subject' => 'Hello',
+    'text'    => 'Testing some Mailgun awesomness!'
+    );
 
-
-    $mail->Subject = 'Hello This is a test';
-    $mail->Body    = 'Testing some Mailgun awesomness';
-
-    if(!$mail->send()) {
-        echo 'Message could not be sent.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
-    } else {
-        echo 'Message has been sent';
-    }
-    }
+# Make the call to the client.
+    $mg->messages()->send($domain, $params);
