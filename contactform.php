@@ -12,7 +12,7 @@
     'from'    => 'Excited User <YOU@sandbox9da3b219d1ef41258a670b124f821fc4.mailgun.org	>',
     'to'      => 'daniel.goodfellow@sky.com',
     'subject' => 'Hello',
-    'text'    => 'Testing some Mailgun awesomness!'
+    'text'    => 'Testing some Mailgun awesomness! Lets home it works'
     );
 
 # Make the call to the client.
