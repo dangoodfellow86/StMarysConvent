@@ -48,7 +48,7 @@ body{
 {
     text-align: center;
     margin: 10%;
-    font-size: 5vw;
+    font-size: 7vw;
     font-family: 'Great Vibes',
     cursive;
 }
@@ -91,7 +91,7 @@ body{
 }
 .contact-body h3,
 .res-body h3 { 
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     font-family: 'Great Vibes',
     cursive;
 }
