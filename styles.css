@@ -43,7 +43,19 @@ body{
     color: #000000;
     font-size: 5vw;
 }
-
+.main-title h1{
+    text-align: center;
+    margin: 10%;
+    font-size: 5vw;
+}
+.main-title p {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.25vw;
+}
 .main-body{
     background-color: #f5f0e5;
     position: relative;
@@ -60,53 +72,129 @@ body{
 .main-body p{
     font-size: 1.5vw;
 }
-.copyright{
-    display: inline-block;
+
+.res-body{
+    box-sizing: border-box;
     width: 100%;
+    height: 80%;    
+}
+.res-body p{
+    font-size: 1.25vw;
+   
+}
+.res-body h3 { 
+    font-size: 2.5vw;
+}
+.res-bed, 
+.res-hair,
+.res-food,
+.res-social,
+.res-areas,
+.res-grounds
+{
+    align-content: center;
+    text-align: left;
+    width: 100%;
+    padding: 2.5%;
+   
+    
+}
+.res-bed img,
+.res-social img
+
+{
+    float: right;
+    margin-left: 1.5%;
+    
+   
+}
+.res-hair img,
+.res-food img,
+.res-areas img,
+.res-grounds img
+{
+    float: left;
+    margin-right: 1.5%;
+}
+ .clearfix{
+     overflow: auto;
+ }
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.chapel-img img{
+    
+    width: 100%;
+    align-items: center;
+    opacity: 0.5;
+}
+.chapel-body{
     text-align: center;
+  
+}
+.chapel-body p{
+    font-size: 1.5vw;
+}
+.chapel-title h1{
+    text-align: center;
+    margin: 5%;
+    font-family: 'Great Vibes',
+    cursive;
+    font-size: 7.5vw;
+    width: auto;
+    height: auto;
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text],
+/* input[type=text],
 input[type=email],
 textarea {
     width: 100%;
     /* Full width */
-    padding: 12px;
+    /* padding: 12px; */
     /* Some padding */
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     /* Gray border */
-    border-radius: 4px;
+    /* border-radius: 4px; */
     /* Rounded borders */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* Make sure that padding and width stays in place */
-    margin-top: 6px;
+    /* margin-top: 6px; */
     /* Add a top margin */
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     /* Bottom margin */
-    resize: vertical
+    /* resize: vertical */
         /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+/* } */
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+/* input[type=submit] { */
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    /* padding: 12px 20px; */
+    /* border: none; */
+    /* border-radius: 4px; */
+    /* cursor: pointer; */
+/* } */
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+/* input[type=submit]:hover { */
+    /* background-color: #45a049; */
+/* } */
 
 /* Add a background color and some padding around the form */
-.container {
-    margin-top: 10%;
-    border-radius: 5px;
+/* .container { */
+    /* margin-top: 10%; */
+    /* border-radius: 5px; */
     /* background-color: #f2f2f2; */
-    padding: 20px;
+    /* padding: 20px; */
+/* } */
+
+.copyright {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 400px;
 }
